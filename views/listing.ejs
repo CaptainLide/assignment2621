@@ -1,0 +1,15 @@
+<% books.forEach(s=>
+    { %> 
+        <h3>Book: <%= s.name %></h3>
+        <b>Author:</b>
+        <p><%=s.author%></p>
+
+        <a href="<%=s.link %>""><p>Buy on Amazon!!</p></a>
+    <% });
+%>
+<div class="navbar">
+    <a href="/home">List of Books</a>
+    <a href="/addnewbook">Add Book</a>
+    <a href="/deleteabook">Delete Book</a>
+</div>
+

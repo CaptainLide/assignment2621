@@ -1,0 +1,17 @@
+<h2>Add a book</h2>
+
+<form action="/addnewbook" method="POST">
+    <label for="bookName">Book Name:</label>
+    <input id="bookName" type="text" name="bookName"><br>
+    <label for="authorName">Author Name:</label>
+    <input type="text" name="authorName" id="authorName"><br>
+    <label for="link">Amazon Link:</label>
+    <input type="text" name="amazonLink" id="amazonLink"><br>
+    <input type="submit" value="Add Book">
+</form>
+
+<div class="navbar">
+    <a href="/home">List of Books</a>
+    <a href="/addnewbook">Add Book</a>
+    <a href="#deletebook">Delete Book</a>
+</div>

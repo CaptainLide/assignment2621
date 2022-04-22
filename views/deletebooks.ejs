@@ -1,0 +1,16 @@
+<h2>Select the book to delete!</h2>
+<% books.forEach(s=>
+    { %> 
+        <a href="<%=`books/${s._id}/delete?_method=DELETE`%>" 
+            onclick="return confirm('Are you sure you want to delete this book?')">Delete</a>
+        <a href="/books/<%=s.bookNumber %>"> <p>
+            <b>Book Title:</b>
+            <%= s.name %>
+        </p></a>
+    <% });
+%>
+<div class="navbar">
+    <a href="/home">List of Books</a>
+    <a href="/addnewbook">Add Book</a>
+    <a href="deleteabook">Delete Book</a>
+</div>
