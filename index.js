@@ -1,8 +1,8 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const uri = process.env.ATLAS_URI;
-const book = require("/home/ajalcantara/test_env/serve_html/models/book")
-const bookController = require("/home/ajalcantara/test_env/serve_html/controllers/controller");
+const book = require("./models/book")
+const bookController = require("./controllers/controller");
 const res = require("express/lib/response");
 const methodOverride = require("method-override");
 const express = require("express"),

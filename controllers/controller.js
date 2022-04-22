@@ -1,4 +1,4 @@
-const Book = require("/home/ajalcantara/test_env/serve_html/models/book");
+const Book = require("../models/book");
 
 exports.getAllBooks = (req, res, next) => {
     Book.find({}, (error, books) => {
